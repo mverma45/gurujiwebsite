@@ -81,3 +81,17 @@ img {
 	border-radius: 8px;
 	margin-bottom: 16px;
 }
+
+table {
+	width: 78%;
+	border-collapse: collapse;
+	margin-top: 20px;
+	margin-left: 5px;
+}
+
+th,
+td {
+	border: 1px solid #ddd;
+	padding: 1px;
+	text-align: left;
+}
