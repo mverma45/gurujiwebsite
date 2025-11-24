@@ -74,3 +74,10 @@ footer {
 		gap: 12px;
 	}
 }
+
+img {
+	max-width: 30%;
+	height: auto;
+	border-radius: 8px;
+	margin-bottom: 16px;
+}
