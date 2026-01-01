@@ -89,7 +89,7 @@ footer {
 }
 
 /* Responsive design */
-@media (min-width: 100%) {
+@media (max-width: 100%) {
 	main {
 		padding: 12px;
 	}
