@@ -72,6 +72,12 @@ nav a:hover {
 	font-size: 1.2rem;
 }
 
+.hero h2 a {
+	font-size: 1.25rem;
+	margin-bottom: 16px;
+	text-decoration: none;
+}
+
 .guruji-mantrajaap {
 	font-family: 'Tangerine', cursive;
 	font-weight: 400;
