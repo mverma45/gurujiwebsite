@@ -77,7 +77,10 @@ nav a:hover {
 	margin-bottom: 16px;
 	text-decoration: none;
 }
-
+h1 {
+	text-align: center;
+	margin-bottom: 16px;
+}
 .guruji-mantrajaap {
 	font-family: 'Tangerine', cursive;
 	font-weight: 400;
@@ -85,6 +88,16 @@ nav a:hover {
 	font-size: 1.5rem;
 	text-align: center;
 	margin-top: 16px;
+}
+
+.guruji-thankfulness {
+	font-family: 'Tangerine', cursive;
+	font-weight: 700;
+	font-style: normal;
+	font-size: 1.5rem;
+	text-align: center;
+	margin-top: 16px;
+	color: #2d3e50;
 }
 
 main {
@@ -99,6 +112,10 @@ main {
 h3 {
 	text-align: center;
 	margin-bottom: 16px;
+}
+
+strong {
+	color: #000305;
 }
 /* Footer styles */
 footer {
@@ -137,9 +154,6 @@ table {
 
 th,
 td {
-	max-width: 100%;
-	border: 1px solid #ddd;
-	padding: 1px;
 	text-align: left;
 }
 
