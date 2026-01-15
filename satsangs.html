@@ -5,9 +5,6 @@
 		<meta
 			name="viewport"
 			content="width=device-width, initial-scale=1.0" />
-		<link
-			rel="stylesheet"
-			href="styles.css" />
 		<title>GuruJi Website</title>
 		<link
 			rel="icon"
@@ -15,39 +12,35 @@
 			href="./faviconGuruJi.jpg" />
 		<link
 			rel="stylesheet"
-			href="/CSS/styles.css" />
+			href="style.css" />
 	</head>
 	<body>
 		<header>
-			<nav>
+			<nav class="guruji-nav">
 				<img
 					src="./GuruJi.jpeg"
-					alt="GuruJi"
-					class="logo" />
-				<!-- <ul>
-					<li><a href="/HTML/index.html">Jai GuruJi</a></li>
-					<li><a href="/HTML/satsangs.html">Upcoming Satsangs</a></li>
-					<li><a href="/HTML/about.html">About GuruJi</a></li>
-					 <li><a href="#">Videos</a></li>
-				</ul> -->
-				<ul>
+					alt="GuruJi" 
+					/>
+
+				<ul class="guruji-nav-links">
 					<li><a href="./index.html">Jai GuruJi</a></li>
 					<li><a href="./satsangs.html">Upcoming Satsangs</a></li>
 					<li><a href="./about.html">About GuruJi</a></li>
-					<!-- <li><a href="#">Videos</a></li> -->
 				</ul>
 			</nav>
-			<h1>&#x1F64F; Jai Guru Ji &#x1F64F;</h1>
-			<h1>Shukrana GuruJi</h1>
+
+			<section class="guruji-slogan">
+				<h1>Jai Guru Ji<br /></h1>
+				<h1>Shukrana Guru Ji</h1>
 		</header>
 		<main>
-			<section class="upcoming-satsangs">
+			<section class="guruji-upcoming-satsangs-map">
 				<h3>
 					Click on View larger map to open in maps, click on phone number to
 					call.
 				</h3>
 
-				<table>
+				<table class="guruji-upcoming-satsangs-table">
 					<tr>
 						<th>Satsang Day and Date</th>
 						<th>Time</th>
@@ -107,39 +100,19 @@
 				<a
 					href="https://forms.gle/UXszaL2ohEf4kna5A"
 					target="_blank">
-					<button
-						style="
-							background-color: hsl(147, 38%, 46%);
-							color: white;
-							padding: 15px 25px;
-							font-size: 18px;
-							border: none;
-							border-radius: 8px;
-							cursor: pointer;
-						">
-						🙏 RSVP
-					</button>
+					<button>🙏 RSVP</button>
 				</a>
 
 				<a
 					href="https://forms.gle/cQhsJVcKfdJHSp8N9"
 					target="_blank">
-					<button
-						style="
-							background-color: hsl(147, 38%, 46%);
-							color: white;
-							padding: 15px 25px;
-							font-size: 18px;
-							border: none;
-							border-radius: 8px;
-							cursor: pointer;
-						">
+					<button>
 						🙏 Request a Satsang
 					</button>
 				</a>
 			</section>
 		</main>
-		<footer>
+		<footer class="guruji-footer">
 			<p>&copy; 2025 GuruJi. All rights reserved.</p>
 		</footer>
 	</body>

@@ -1,0 +1,254 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+:root {
+	--primary-color: #007bff;
+	--secondary-color: #6c757d;
+	--text-color: #333;
+	--bg-color: #fff;
+}
+
+html {
+	font-size: 16px;
+}
+
+body {
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+		Ubuntu, Cantarell, sans-serif;
+	color: var(--text-color);
+	background-color: var(--bg-color);
+	line-height: 1.6;
+}
+/* header */
+.guruji-nav {
+	display: flex;
+	justify-content: space-evenly;
+	padding: 1rem 0.25rem;
+	background-color: var(--primary-color);
+}
+
+.guruji-nav-links {
+	font-size: 1.25em;
+	list-style: none;
+	display: flex;
+	gap: 1.5rem;
+	align-items: center;
+}
+
+.guruji-hero {
+	text-align: center;
+	padding: 2rem 0;
+	background-color: #eedb2c;
+	margin-bottom: 2rem;
+}
+
+.guruji-hero a {
+	text-decoration: none;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	font-size: 1em;
+}
+
+.guruji-slogan {
+	font-size: 2em;
+	text-align: center;
+	margin-bottom: 1rem;
+}
+
+.guruji-mantrajaap {
+	font-family: cursive;
+	font-size: 2em;
+	text-align: center;
+}
+
+.guruji-community-heading {
+	max-width: 65em;
+	margin: 0 auto;
+	padding: 2rem 0;
+	background-color: #f8f9fa;
+	text-align: center;
+}
+
+.guruji-community-intro {
+	max-width: 75em;
+	margin: 1rem auto 0 auto;
+	font-size: 1.1em;
+	color: var(--secondary-color);
+	padding-bottom: 2em;
+}
+
+.guruji-thankfulness {
+	background-color: #e9ecef;
+	padding: 2rem;
+	text-align: center;
+	margin: 2rem 0;
+	font-size: 1.2em;
+}
+
+.guruji-upcoming-satsangs-map h3 {
+	text-align: center;
+	margin-bottom: 2rem;
+	font-weight: 400;
+}
+
+.guruji-upcoming-satsangs-table {
+	width: 80%;
+	border-collapse: collapse;
+	margin: 2% auto;
+	padding-bottom: 2em;
+}
+.guruji-upcoming-satsangs-table tr:nth-child(even) {
+	background-color: #f2f2f2;
+}
+
+.guruji-upcoming-satsangs-table th {
+	background-color: var(--primary-color);
+	color: white;
+}
+
+.guruji-upcoming-satsangs-table th,
+.guruji-upcoming-satsangs-table td {
+	border: 1px solid #ddd;
+	padding: 1em;
+	text-align: center;
+}
+
+.guruji-footer {
+	background-color: var(--primary-color);
+	color: white;
+	text-align: center;
+	padding: 1rem 0;
+	margin-top: 2rem;
+}
+
+.guruji-story-section {
+	max-width: 65em;
+	margin: 0 auto;
+	padding: 2rem 1rem;
+}
+
+.guruji-story-section h2 {
+	text-align: center;
+	margin-bottom: 1rem;
+}
+
+.guruji-story-section img {
+	display: block;
+	margin: 1rem auto;
+	max-width: 70%;
+	height: 25em;
+	border-radius: 8px;
+}
+
+/* Container */
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+
+/* Header & Navigation */
+header {
+	background-color: var(--primary-color);
+	color: white;
+	padding: 1rem 0;
+}
+
+nav ul {
+	list-style: none;
+	display: flex;
+	gap: 2rem;
+	flex-wrap: wrap;
+}
+
+nav a {
+	color: white;
+	text-decoration: none;
+	transition: opacity 0.3s;
+}
+
+nav a:hover {
+	opacity: 0.8;
+}
+
+/* Grid Layout */
+.grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	gap: 2rem;
+}
+
+/* Buttons */
+button,
+.btn {
+	padding: 0.75rem 1.5rem;
+	background-color: var(--primary-color);
+	color: white;
+	/* border: none; */
+	border-radius: 4px;
+	cursor: pointer;
+	font-size: 1rem;
+	transition: background-color 0.3s;
+	margin: 1em;
+}
+
+button:hover,
+.btn:hover {
+	background-color: #0056b3;
+}
+
+/* Responsive Typography */
+h1 {
+	font-size: clamp(1.5rem, 5vw, 3rem);
+	margin-bottom: 1rem;
+}
+
+h2 {
+	font-size: clamp(1.25rem, 4vw, 2rem);
+	margin-bottom: 0.75rem;
+}
+
+h3 {
+	font-size: clamp(1.1rem, 3vw, 1.5rem);
+	margin-bottom: 0.5rem;
+}
+
+p {
+	margin-bottom: 1rem;
+}
+
+/* Tablet (768px and up) */
+@media (max-width: 768px) {
+	nav ul {
+		flex-direction: column;
+		gap: 1rem;
+	}
+
+	.grid {
+		grid-template-columns: 1fr;
+		gap: 1.5rem;
+	}
+
+	html {
+		font-size: 14px;
+	}
+}
+
+/* Mobile (480px and down) */
+@media (max-width: 480px) {
+	.container {
+		padding: 0 15px;
+	}
+
+	button,
+	.btn {
+		width: 100%;
+		padding: 0.75rem 1rem;
+	}
+
+	h1 {
+		font-size: 1.75rem;
+	}
+}

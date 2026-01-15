@@ -5,9 +5,7 @@
 		<meta
 			name="viewport"
 			content="width=device-width, initial-scale=1.0" />
-		<link
-			rel="stylesheet"
-			href="styles.css" />
+
 		<title>GuruJi Website</title>
 		<link
 			rel="icon"
@@ -15,31 +13,30 @@
 			href="./faviconGuruJi.jpg" />
 		<link
 			rel="stylesheet"
-			href="/CSS/styles.css" />
+			href="./style.css" />
 	</head>
 	<body>
 		<header>
-			<nav>
+			<nav class="guruji-nav">
 				<img
-					src="GuruJi.jpeg"
-					alt="GuruJi"
-					class="logo" />
-				<ul>
+					src="./GuruJi.jpeg"
+					alt="GuruJi" />
+
+				<ul class="guruji-nav-links">
 					<li><a href="./index.html">Jai GuruJi</a></li>
 					<li><a href="./satsangs.html">Upcoming Satsangs</a></li>
 					<li><a href="./about.html">About GuruJi</a></li>
-					<a
-						href="wa.me"
-						target="_blank">
-					</a>
-					<!-- <li><a href="#">Videos</a></li> -->
 				</ul>
 			</nav>
-			<h1>&#x1F64F; Jai Guru Ji &#x1F64F;</h1>
-			<h1>Shukrana GuruJi</h1>
+
+			<section class="guruji-slogan">
+				<h1>Jai Guru Ji<br /></h1>
+				<h1>Shukrana Guru Ji</h1>
+			</section>
 		</header>
+
 		<main>
-			<section class="hero">
+			<section class="guruji-hero">
 				<h2>
 					<a
 						href="https://www.gurujisangatfoundation.com/our-guruji.html"
@@ -51,13 +48,15 @@
 
 			<section class="guruji-mantrajaap">
 				<p>
-					&#x1F932; Om Namah Shivay Shivji Sada Sahay, Om Namah Shivay Guru Ji
-					Sada Sahay &#x1F932;
+					&#x1F932; Om Namah Shivay Shiv Ji Sada Sahay, <br />Om Namah Shivay
+					Guru Ji Sada Sahay &#x1F932;
 				</p>
 			</section>
+
 			<section class="guruji-community-heading">
 				<h1>Utah Guru Ji Sangat | Spiritual Community & Meditation in Utah</h1>
-				<p>
+
+				<p class="guruji-community-intro">
 					Discover Peace, Purpose, and Spiritual Growth! We gather monthly for
 					satsangs where we come together in sacred fellowship to listen to
 					divine shabads and experience the uplifting power of kirtan and
@@ -71,16 +70,18 @@
 					our <a href="./satsangs.html">upcoming satsangs</a> and resources as
 					we support your journey.
 				</p>
-				<strong>All paths, all seekers, all hearts—welcome.</strong>
+
+				<h3>All paths, all seekers, all hearts—welcome.</h3>
 			</section>
+
 			<section class="guruji-thankfulness">
 				<p>Jai Guru Ji 🙏 Shukrana Guru Ji</p>
 				<p>Aapka har pal ka Shukrana hi Shukrana mere malik.</p>
 			</section>
-			<section>
-				<h3>Upcoming Satsangs</h3>
+
+			<!-- <section class="guruji-upcoming-satsangs-link">
 				<p><a href="./satsangs.html">Upcoming satsangs</a></p>
-			</section>
+			</section> -->
 			<!-- <section class="donation">
 				<h3>Support Our Mission</h3>
 				<p>
@@ -90,7 +91,8 @@
 				</p>
 			</section> -->
 		</main>
-		<footer>
+
+		<footer class="guruji-footer">
 			<p>&copy; 2025 GuruJi. All rights reserved.</p>
 		</footer>
 	</body>

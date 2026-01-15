@@ -5,9 +5,6 @@
 		<meta
 			name="viewport"
 			content="width=device-width, initial-scale=1.0" />
-		<link
-			rel="stylesheet"
-			href="styles.css" />
 		<title>GuruJi Website</title>
 		<link
 			rel="icon"
@@ -15,33 +12,28 @@
 			href="./faviconGuruJi.jpg" />
 		<link
 			rel="stylesheet"
-			href="/CSS/styles.css" />
+			href="style.css" />
 	</head>
 	<body>
 		<header>
-			<nav>
+			<nav class="guruji-nav">
 				<img
 					src="./GuruJi.jpeg"
-					alt="GuruJi"
-					class="logo" />
-				<!-- <ul>
-					<li><a href="/HTML/index.html">Jai GuruJi</a></li>
-					<li><a href="/HTML/satsangs.html">Upcoming Satsangs</a></li>
-					<li><a href="/HTML/about.html">About GuruJi</a></li>
-					<li><a href="#">Videos</a></li>
-				</ul> -->
-				<ul>
+					alt="GuruJi" />
+
+				<ul class="guruji-nav-links">
 					<li><a href="./index.html">Jai GuruJi</a></li>
 					<li><a href="./satsangs.html">Upcoming Satsangs</a></li>
 					<li><a href="./about.html">About GuruJi</a></li>
-					<!-- <li><a href="#">Videos</a></li> -->
 				</ul>
 			</nav>
-			<h1>&#x1F64F; Jai Guru Ji &#x1F64F;</h1>
-			<h1>Shukrana GuruJi</h1>
+
+			<section class="guruji-slogan">
+				<h1>Jai Guru Ji<br /></h1>
+				<h1>Shukrana Guru Ji</h1>
 		</header>
 		<main>
-			<section class="about-guruji">
+			<section class="guruji-story-section">
 				<h2>About GuruJi</h2>
 				<img
 					src="GuruJi.jpg"
@@ -57,7 +49,7 @@
 				</p>
 			</section>
 		</main>
-		<footer>
+		<footer class="guruji-footer">
 			<p>&copy; 2025 GuruJi. All rights reserved.</p>
 		</footer>
 	</body>
