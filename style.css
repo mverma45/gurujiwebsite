@@ -85,7 +85,6 @@ body {
 
 .guruji-community-intro a {
 	text-decoration: none;
-	/* color: var(--primary-color); */
 }
 
 .guruji-thankfulness {
@@ -251,6 +250,7 @@ p {
 		padding: 0 15px;
 	}
 
+<<<<<<< HEAD
 	.guruji-nav img {
 		height: 1rem;
 	}
@@ -268,6 +268,8 @@ p {
 		gap: 1rem;
 	} */
 
+=======
+>>>>>>> b36fe72 (updating text decoration)
 	button,
 	.btn {
 		width: 100%;
