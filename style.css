@@ -30,6 +30,10 @@ body {
 	background-color: var(--primary-color);
 }
 
+.guruji-nav img {
+	height: 15rem;
+}
+
 .guruji-nav-links {
 	font-size: 1.25em;
 	list-style: none;
@@ -77,6 +81,11 @@ body {
 	font-size: 1.1em;
 	color: var(--secondary-color);
 	padding-bottom: 2em;
+}
+
+.guruji-community-intro a {
+	text-decoration: none;
+	/* color: var(--primary-color); */
 }
 
 .guruji-thankfulness {
@@ -242,9 +251,22 @@ p {
 		padding: 0 15px;
 	}
 
-		.guruji-nav img {
+	.guruji-nav img {
 		height: 1rem;
 	}
+
+	.guruji-nav img {
+		height: 1rem;
+	}
+	/* 
+	nav ul {
+		gap: 0.75rem;
+	}
+
+	.grid {
+		grid-template-columns: 1fr;
+		gap: 1rem;
+	} */
 
 	button,
 	.btn {
