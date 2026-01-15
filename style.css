@@ -242,6 +242,10 @@ p {
 		padding: 0 15px;
 	}
 
+		.guruji-nav img {
+		height: 1rem;
+	}
+
 	button,
 	.btn {
 		width: 100%;
