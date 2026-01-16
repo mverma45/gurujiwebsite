@@ -228,7 +228,7 @@ p {
 }
 
 /* Tablet (768px and up) */
-@media (max-width: 768px) {
+@media (max-width: 1100px) {
 	nav ul {
 		flex-direction: column;
 		gap: 1rem;
@@ -244,54 +244,75 @@ p {
 	}
 }
 
-/* Mobile (480px and down) */
-@media (max-width: 480px) {
-	.container {
-		padding: 0 15px;
+/* Mobile (700px and down) */
+
+@media (max-width: 1100px) {
+	.guruji-upcoming-satsangs-table {
+		width: 95%;
+		border-collapse: separate; /* helps "card" spacing */
+		border-spacing: 0;
 	}
 
-	.guruji-nav img {
-		height: 10rem;
+	.guruji-upcoming-satsangs-table thead {
+		display: none; /* hide header row on mobile */
 	}
 
-	nav ul {
-		gap: 0.75rem;
+	.guruji-upcoming-satsangs-table,
+	.guruji-upcoming-satsangs-table tbody,
+	.guruji-upcoming-satsangs-table tr,
+	.guruji-upcoming-satsangs-table td {
+		display: block;
+		width: 95%;
 	}
 
-	.grid {
-		grid-template-columns: 1fr;
+	.guruji-upcoming-satsangs-table tr {
+		margin: 0 0 1rem 0;
+		border: 1px solid #ddd;
+		border-radius: 10px;
+		padding: 0.75rem;
+		background: #fff;
+	}
+
+	.guruji-upcoming-satsangs-table td {
+		border: none; /* remove grid borders */
+		padding: 0.5rem 0;
+		text-align: left; /* better for mobile */
+		display: flex;
+		justify-content: space-between;
 		gap: 1rem;
 	}
 
-	.guruji-upcoming-satsangs-table {
-		width: 80%;
-		border-collapse: collapse;
-		margin: 2% auto;
-		padding-bottom: 2em;
-	}
-	.guruji-upcoming-satsangs-table tr:nth-child(even) {
-		background-color: #f2f2f2;
+	.guruji-upcoming-satsangs-table td::before {
+		content: attr(data-label);
+		font-weight: 700;
+		flex: 1;
 	}
 
-	.guruji-upcoming-satsangs-table th {
-		background-color: var(--primary-color);
-		color: white;
+	.guruji-upcoming-satsangs-table td > * {
+		flex: 1;
 	}
 
-	.guruji-upcoming-satsangs-table th,
-	.guruji-upcoming-satsangs-table td {
-		border: 1px solid #ddd;
-		padding: 1em;
-		text-align: center;
+	/* Optional: make the map usable on mobile */
+	.guruji-upcoming-satsangs-table iframe {
+		width: 100%;
+		height: 180px;
 	}
+}
 
-	button,
-	.btn {
-		width: 50%;
-		padding: 0.75rem 1rem;
-	}
+.guruji-upcoming-satsangs-table th:nth-child(even) {
+	background-color: #f2f2f2;
+}
 
-	h1 {
-		font-size: 1.75rem;
-	}
+.guruji-upcoming-satsangs-table th {
+	background-color: var(--primary-color);
+}
+
+button,
+.btn {
+	width: 50%;
+	padding: 0.75rem 1rem;
+}
+
+h1 {
+	font-size: 1.75rem;
 }
