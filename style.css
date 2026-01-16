@@ -251,7 +251,7 @@ p {
 	}
 
 	.guruji-nav img {
-		height: 1rem;
+		height: 10rem;
 	}
 
 	.guruji-nav img {
@@ -267,9 +267,31 @@ p {
 		gap: 1rem;
 	} */
 
+	.guruji-upcoming-satsangs-table {
+		width: 80%;
+		border-collapse: collapse;
+		margin: 2% auto;
+		padding-bottom: 2em;
+	}
+	.guruji-upcoming-satsangs-table tr:nth-child(even) {
+		background-color: #f2f2f2;
+	}
+
+	.guruji-upcoming-satsangs-table th {
+		background-color: var(--primary-color);
+		color: white;
+	}
+
+	.guruji-upcoming-satsangs-table th,
+	.guruji-upcoming-satsangs-table td {
+		border: 1px solid #ddd;
+		padding: 1em;
+		text-align: center;
+	}
+
 	button,
 	.btn {
-		width: 100%;
+		width: 50%;
 		padding: 0.75rem 1rem;
 	}
 
