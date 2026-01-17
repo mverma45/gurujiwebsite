@@ -107,6 +107,7 @@ body {
 	margin: 2% auto;
 	padding-bottom: 2em;
 }
+
 .guruji-upcoming-satsangs-table tr:nth-child(even) {
 	background-color: #f2f2f2;
 }
