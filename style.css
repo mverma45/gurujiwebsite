@@ -110,12 +110,12 @@ body {
 }
 
 .guruji-upcoming-satsangs-table tr:nth-child(even) {
-	background-color: #f2f2f2;
+	background-color: var(--secondary-color);
 }
 
 .guruji-upcoming-satsangs-table th {
 	background-color: var(--primary-color);
-	color: black;
+	color: var(--secondary-color);
 }
 
 .guruji-upcoming-satsangs-table th,
