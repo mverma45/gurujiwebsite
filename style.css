@@ -5,6 +5,41 @@
 }
 
 :root {
+	--guruji-red: #b30000;
+	--guruji-dark-red: #7a0000;
+	--guruji-gold: #d4af37;
+	--guruji-light: #fff5f5;
+}
+
+body {
+	font-family: Arial, sans-serif;
+	background: var(--guruji-light);
+	color: #222;
+}
+
+header {
+	background: linear-gradient(90deg, var(--guruji-red), var(--guruji-dark-red));
+	color: white;
+}
+
+.guruji-nav a {
+	color: white;
+	text-decoration: none;
+}
+
+.btn {
+	background: var(--guruji-red);
+	color: white;
+	padding: 12px 20px;
+	border-radius: 8px;
+	display: inline-block;
+}
+
+.btn:hover {
+	background: var(--guruji-dark-red);
+}
+
+/* :root {
 	--primary-color: #007bff;
 	--secondary-color: #6c757d;
 	--text-color: #333;
@@ -22,6 +57,23 @@ body {
 	color: var(--text-color);
 	background-color: var(--bg-color);
 	line-height: 1.6;
+} */
+
+.guruji-connect {
+	text-align: center;
+	padding: 40px 20px;
+	background: white;
+	border-top: 3px solid var(--guruji-red);
+}
+
+.qr-section {
+	margin-top: 20px;
+}
+
+.social-links a {
+	color: var(--guruji-red);
+	font-weight: bold;
+	margin: 0 10px;
 }
 /* header */
 .guruji-nav {
