@@ -148,6 +148,11 @@ body {
 	font-size: 1.2em;
 }
 
+.guruji-video {
+	justify-content: center;
+	margin: 2rem 0;
+}
+
 .guruji-upcoming-satsangs-map h3 {
 	text-align: center;
 	margin-bottom: 2rem;
@@ -334,6 +339,12 @@ p {
 		display: flex;
 		justify-content: space-between;
 		gap: 1rem;
+	}
+
+	.guruji-video {
+		display: flex;
+		justify-content: center;
+		margin: 2rem 0;
 	}
 
 	.guruji-upcoming-satsangs-table td::before {
