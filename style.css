@@ -5,18 +5,33 @@
 }
 
 :root {
-	--guruji-red: #b30000;
-	--guruji-dark-red: #7a0000;
-	--guruji-gold: #d4af37;
-	--guruji-light: #fff5f5;
+	--red: #b30000;
+	--dark-red: #740000;
+	--deep-red: #4d0000;
+	--gold: #d4af37;
+	--cream: #fff7f0;
+	--light-red: #fff0f0;
+	--white: #ffffff;
+	--text: #222222;
+	--muted: #666666;
+	--shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+}
+
+html {
+	scroll-behavior: smooth;
 }
 
 body {
 	font-family: Arial, Helvetica, sans-serif;
-	background: var(--guruji-light);
-	color: #222;
-	line-height: 1.6;
+	background: var(--cream);
+	color: var(--text);
+	line-height: 1.7;
 	overflow-x: hidden;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
 }
 
 a {
@@ -24,342 +39,505 @@ a {
 	text-decoration: none;
 }
 
-
-/* ================= HEADER ================= */
-
-header {
-	background: linear-gradient(
-		90deg,
-		var(--guruji-red),
-		var(--guruji-dark-red)
-	);
-	color: white;
-}
-
-
-.guruji-nav {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	padding: 1rem 5%;
-	gap: 2rem;
-}
-
-
-.guruji-nav img {
-	width: 90px;
-	height: auto;
-	border-radius: 10px;
-}
-
-
-.guruji-nav-links {
-	list-style: none;
-	display: flex;
-	gap: 1.5rem;
-	align-items: center;
-}
-
-
-.guruji-nav-links a {
-	font-weight: bold;
-}
-
-
-.guruji-nav-links a:hover {
-	color: var(--guruji-gold);
-}
-
-
-.guruji-slogan {
-	text-align: center;
-	font-size: clamp(1.2rem, 4vw, 2rem);
-	padding-bottom: 1rem;
-}
-
-
-
-/* ================= BUTTON ================= */
-
-.btn {
-	display: inline-block;
-	background: var(--guruji-red);
-	color: white;
-	padding: 12px 20px;
-	border-radius: 8px;
-	margin: 1rem;
-	font-weight: bold;
-}
-
-
-.btn:hover {
-	background: var(--guruji-dark-red);
-}
-
-
-
-/* ================= HERO ================= */
-
-.guruji-hero {
-	text-align: center;
-	background: #eedb2c;
-	padding: 2rem 5%;
-	margin-bottom: 2rem;
-}
-
-
-.guruji-hero h1 {
-	font-size: clamp(2rem, 6vw, 4rem);
-}
-
-
-
-/* ================= SATSANG TABLE ================= */
-
-.guruji-upcoming-satsangs-table {
-	width: 90%;
-	margin: 2rem auto;
-	border-collapse: collapse;
-	background: white;
-}
-
-
-.guruji-upcoming-satsangs-table th,
-.guruji-upcoming-satsangs-table td {
-	border: 1px solid #ddd;
-	padding: 1rem;
-	text-align: center;
-}
-
-
-.guruji-upcoming-satsangs-table th {
-	background: var(--guruji-red);
-	color: white;
-}
-
-
-
-/* ================= COMMUNITY ================= */
-
-.guruji-community-heading {
-	max-width: 900px;
-	margin: auto;
-	background: white;
-	padding: 2rem 5%;
-	text-align: center;
-}
-
-
-.guruji-community-intro {
-	font-size: 1.1rem;
-	margin-top: 1rem;
-}
-
-
-
-.guruji-video {
-	max-width: 700px;
-	margin: 2rem auto;
-}
-
-
-.guruji-video iframe {
-	width: 100%;
-	aspect-ratio: 16 / 9;
-	border-radius: 10px;
-}
-
-
-
-/* ================= MANTRA ================= */
-
-.guruji-mantrajaap {
-	text-align: center;
-	font-family: cursive;
-	font-size: clamp(1.2rem, 5vw, 2rem);
-	padding: 2rem 1rem;
-}
-
-
-
-/* ================= THANKFUL ================= */
-
-.guruji-thankfulness {
-	background: #eee;
-	text-align: center;
-	padding: 2rem;
-	margin: 2rem 0;
-}
-
-
-
-/* ================= ABOUT PAGE IMAGE ================= */
-
-
-.guruji-story-section {
-	width: min(90%, 900px);
-	margin: auto;
-	padding: 2rem 1rem;
-}
-
-
-.guruji-story-section h2 {
-	text-align: center;
+p {
 	margin-bottom: 1rem;
 }
 
+h1,
+h2,
+h3 {
+	line-height: 1.2;
+	margin-bottom: 1rem;
+}
 
-.guruji-story-image {
-	width: min(100%, 500px);
-	margin: 0 auto 2rem auto;
+h1 {
+	font-size: clamp(2rem, 6vw, 4rem);
+}
+
+h2 {
+	font-size: clamp(1.5rem, 4vw, 2.4rem);
+}
+
+h3 {
+	font-size: clamp(1.2rem, 3vw, 1.6rem);
+}
+
+/* Header */
+
+.site-header {
+	background: linear-gradient(135deg, var(--red), var(--dark-red), var(--deep-red));
+	color: var(--white);
+	box-shadow: var(--shadow);
+}
+
+.nav {
+	width: min(1100px, 92%);
+	margin: 0 auto;
+	padding: 1rem 0;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 2rem;
+}
+
+.logo {
+	width: 85px;
+	border-radius: 12px;
+	display: block;
+}
+
+.nav-links {
+	list-style: none;
+	display: flex;
+	align-items: center;
+	gap: 1.5rem;
+	font-weight: 700;
+}
+
+.nav-links a {
+	position: relative;
+	padding-bottom: 4px;
+}
+
+.nav-links a:hover {
+	color: var(--gold);
+}
+
+.nav-links a::after {
+	content: "";
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 0;
+	height: 2px;
+	background: var(--gold);
+	transition: width 0.2s ease;
+}
+
+.nav-links a:hover::after {
+	width: 100%;
+}
+
+.slogan {
+	text-align: center;
+	font-size: clamp(1.1rem, 3vw, 1.6rem);
+	font-weight: 700;
+	padding: 0 1rem 1rem;
+	margin: 0;
+}
+
+/* Buttons */
+
+.button-group {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 1rem;
+	margin-top: 1.5rem;
+}
+
+.btn {
+	display: inline-block;
+	padding: 0.9rem 1.3rem;
+	border-radius: 999px;
+	font-weight: 700;
+	transition: 0.2s ease;
+}
+
+.btn-primary {
+	background: var(--red);
+	color: var(--white);
+}
+
+.btn-primary:hover {
+	background: var(--dark-red);
+	transform: translateY(-2px);
+}
+
+.btn-secondary {
+	background: var(--white);
+	color: var(--red);
+	border: 2px solid var(--red);
+}
+
+.btn-secondary:hover {
+	background: var(--light-red);
+	transform: translateY(-2px);
+}
+
+/* Home hero */
+
+.hero {
+	min-height: 70vh;
+	display: grid;
+	place-items: center;
+	text-align: center;
+	padding: 4rem 1rem;
+	background:
+		linear-gradient(rgba(255, 247, 240, 0.9), rgba(255, 247, 240, 0.9)),
+		radial-gradient(circle at top, var(--gold), transparent 35%),
+		var(--cream);
+}
+
+.hero-content {
+	width: min(850px, 92%);
+}
+
+.eyebrow {
+	color: var(--red);
+	font-weight: 800;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	margin-bottom: 0.5rem;
+}
+
+.hero p {
+	font-size: clamp(1rem, 2vw, 1.25rem);
+	color: #333;
+}
+
+/* Sections */
+
+.section {
+	width: min(1100px, 92%);
+	margin: 0 auto;
+	padding: 3rem 0;
+}
+
+.white-section {
+	background: var(--white);
+	width: min(900px, 92%);
+	padding: 3rem 2rem;
+	margin: 3rem auto;
+	border-radius: 18px;
+	box-shadow: var(--shadow);
 	text-align: center;
 }
 
+.white-section p {
+	max-width: 750px;
+	margin-left: auto;
+	margin-right: auto;
+}
 
-.guruji-story-image img {
-	display: block;
-	width: 100%;
-	max-width: 500px;
-	height: auto;
-	margin: auto;
+.card {
+	background: var(--white);
+	border-radius: 18px;
+	padding: 2rem;
+	box-shadow: var(--shadow);
+}
+
+.next-satsang-card {
+	border-top: 6px solid var(--red);
+}
+
+.satsang-grid {
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	gap: 1rem;
+	margin-top: 1.5rem;
+}
+
+.satsang-grid div {
+	background: var(--light-red);
+	padding: 1rem;
 	border-radius: 12px;
 }
 
-
-.guruji-story-section p {
-	width: min(100%, 500px);
-	margin: auto;
-	line-height: 1.7;
+.satsang-grid span {
+	display: block;
+	color: var(--red);
+	font-size: 0.85rem;
+	font-weight: 800;
+	text-transform: uppercase;
+	margin-bottom: 0.25rem;
 }
 
+.satsang-grid strong {
+	display: block;
+	font-size: 1rem;
+}
 
+.satsang-grid a,
+.about-text a,
+.satsang-table a {
+	color: var(--red);
+	font-weight: 700;
+	text-decoration: underline;
+	text-underline-offset: 3px;
+}
 
-/* ================= CONNECT ================= */
+/* Mantra */
 
-
-.guruji-connect {
+.mantra {
+	background: linear-gradient(135deg, var(--red), var(--dark-red));
+	color: var(--white);
 	text-align: center;
-	background: white;
-	padding: 3rem 1rem;
-	border-top: 4px solid var(--guruji-red);
+	padding: 2.5rem 1rem;
+	font-family: Georgia, "Times New Roman", serif;
+	font-size: clamp(1.2rem, 4vw, 2rem);
 }
 
+.mantra p {
+	margin-bottom: 0.4rem;
+}
+
+/* Video */
+
+.video-wrapper {
+	max-width: 720px;
+	margin: 2rem auto 0;
+}
+
+.video-wrapper iframe {
+	width: 100%;
+	aspect-ratio: 16 / 9;
+	border: 0;
+	border-radius: 14px;
+	box-shadow: var(--shadow);
+}
+
+/* Thankful */
+
+.thankful {
+	text-align: center;
+	background: var(--light-red);
+	padding: 3rem 1rem;
+	font-size: 1.15rem;
+	color: var(--dark-red);
+	font-weight: 700;
+}
+
+/* Connect */
+
+.connect {
+	text-align: center;
+	background: var(--white);
+	padding: 3rem 1rem;
+	border-top: 4px solid var(--red);
+}
+
+.connect p {
+	max-width: 650px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.social-links {
+	display: flex;
+	justify-content: center;
+	gap: 1rem;
+	flex-wrap: wrap;
+	margin-top: 1rem;
+}
 
 .social-links a {
-	color: var(--guruji-red);
-	font-weight: bold;
+	color: var(--red);
+	font-weight: 800;
+	border: 2px solid var(--red);
+	border-radius: 999px;
+	padding: 0.7rem 1.2rem;
 }
 
+.social-links a:hover {
+	background: var(--red);
+	color: var(--white);
+}
 
+/* Page hero */
 
-/* ================= FOOTER ================= */
-
-
-.guruji-footer {
-	background: var(--guruji-red);
-	color: white;
+.page-hero {
 	text-align: center;
-	padding: 1.5rem;
+	padding: 4rem 1rem;
+	background: linear-gradient(rgba(255, 240, 240, 0.9), rgba(255, 240, 240, 0.9));
 }
 
-
-.guruji-copyright {
-	margin-top: 1rem;
-	font-size: .9rem;
-	color: white;
+.page-hero p {
+	color: var(--muted);
+	font-size: 1.15rem;
 }
 
+/* About page */
 
+.about-section {
+	width: min(900px, 92%);
+	margin: 0 auto;
+	padding: 3rem 0;
+	display: grid;
+	place-items: center;
+}
 
-/* ================= MOBILE ================= */
+.about-image {
+	width: min(100%, 430px);
+	margin-bottom: 2rem;
+}
 
+.about-image img {
+	width: 100%;
+	display: block;
+	border-radius: 18px;
+	box-shadow: var(--shadow);
+}
 
-@media(max-width:700px) {
+.about-text {
+	width: min(100%, 650px);
+	background: var(--white);
+	padding: 2rem;
+	border-radius: 18px;
+	box-shadow: var(--shadow);
+	text-align: left;
+}
 
+/* Satsang table */
 
-	.guruji-nav {
+.satsang-table {
+	width: 100%;
+	border-collapse: collapse;
+	background: var(--white);
+	box-shadow: var(--shadow);
+	border-radius: 18px;
+	overflow: hidden;
+}
+
+.satsang-table th,
+.satsang-table td {
+	padding: 1rem;
+	text-align: center;
+	border-bottom: 1px solid #eeeeee;
+}
+
+.satsang-table th {
+	background: var(--red);
+	color: var(--white);
+}
+
+.satsang-table tr:last-child td {
+	border-bottom: none;
+}
+
+/* Footer */
+
+.footer {
+	background: var(--deep-red);
+	color: var(--white);
+	text-align: center;
+	padding: 1.5rem 1rem;
+}
+
+.footer p {
+	margin: 0;
+	font-size: 0.9rem;
+}
+
+/* Tablet */
+
+@media (max-width: 900px) {
+	.satsang-grid {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+/* Mobile */
+
+@media (max-width: 700px) {
+	.nav {
 		flex-direction: column;
+		gap: 1rem;
+	}
+
+	.logo {
+		width: 70px;
+	}
+
+	.nav-links {
+		flex-direction: column;
+		gap: 0.7rem;
 		text-align: center;
 	}
 
-
-	.guruji-nav img {
-		width: 80px;
+	.hero {
+		min-height: auto;
+		padding: 3rem 1rem;
 	}
 
-
-	.guruji-nav-links {
+	.button-group {
 		flex-direction: column;
-		gap: .7rem;
 	}
-
-
-	.guruji-hero {
-		padding: 1.5rem 1rem;
-	}
-
 
 	.btn {
-		display: block;
-		width: 90%;
-		margin: 1rem auto;
+		width: 100%;
+		text-align: center;
 	}
 
+	.card {
+		padding: 1.4rem;
+	}
 
-	/* Mobile table cards */
+	.satsang-grid {
+		grid-template-columns: 1fr;
+	}
 
-	.guruji-upcoming-satsangs-table,
-	.guruji-upcoming-satsangs-table tbody,
-	.guruji-upcoming-satsangs-table tr,
-	.guruji-upcoming-satsangs-table td {
+	.white-section {
+		padding: 2rem 1rem;
+	}
+
+	.about-image {
+		width: min(75%, 280px);
+		margin-bottom: 1.5rem;
+	}
+
+	.about-text {
+		padding: 1.4rem;
+		font-size: 1rem;
+	}
+
+	.satsang-table,
+	.satsang-table thead,
+	.satsang-table tbody,
+	.satsang-table tr,
+	.satsang-table td {
 		display: block;
 		width: 100%;
 	}
 
-
-	.guruji-upcoming-satsangs-table thead {
+	.satsang-table thead {
 		display: none;
 	}
 
-
-	.guruji-upcoming-satsangs-table tr {
-		background: white;
-		margin-bottom: 1rem;
-		border-radius: 10px;
-		padding: 1rem;
+	.satsang-table {
+		box-shadow: none;
+		background: transparent;
 	}
 
+	.satsang-table tr {
+		background: var(--white);
+		border-radius: 16px;
+		box-shadow: var(--shadow);
+		padding: 1rem;
+		margin-bottom: 1rem;
+	}
 
-	.guruji-upcoming-satsangs-table td {
+	.satsang-table td {
 		border: none;
 		text-align: left;
+		padding: 0.7rem 0;
 	}
 
-
-	.guruji-upcoming-satsangs-table td::before {
+	.satsang-table td::before {
 		content: attr(data-label);
 		display: block;
-		font-weight: bold;
-		color: var(--guruji-red);
+		color: var(--red);
+		font-weight: 800;
+		font-size: 0.85rem;
+		text-transform: uppercase;
+		margin-bottom: 0.15rem;
 	}
 
-
-	/* About image mobile */
-
-	.guruji-story-image {
-		width: 85%;
+	.social-links {
+		flex-direction: column;
 	}
 
-
-	.guruji-story-image img {
-		max-width: 280px;
+	.social-links a {
+		width: 100%;
 	}
-
-
-	.guruji-story-section p {
-		width: 85%;
-		font-size: 1rem;
-	}
-
-
 }
