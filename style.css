@@ -244,11 +244,11 @@ header {
 		gap: .75rem;
 	}
 
-	.guruji-nav img {
-	width: 80px;
+	/* .guruji-nav img {
+	width: 40px;
 	height: auto;
 	margin-bottom: 0.5rem;
-	}
+	} */
 
 	.guruji-hero {
 		padding: 1.5rem 1rem;
