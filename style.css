@@ -490,6 +490,10 @@ h3 {
 		padding: 2rem 1rem;
 	}
 
+	.guruji-birthday h2 {
+		font-size: .5rem;
+	}
+	
 	.about-image {
 		width: min(75%, 280px);
 		margin-bottom: 1.5rem;
