@@ -493,6 +493,10 @@ h3 {
 	.guruji-birthday h2 {
 		font-size: .5rem;
 	}
+
+	.guruji-birthday-announcement h2 {
+		font-size: .5rem;
+	}
 	
 	.about-image {
 		width: min(75%, 280px);
