@@ -205,26 +205,6 @@ h3 {
   text-align: center;
 }
 
-/* @media (max-width: 768px) {
-  .prakat-card {
-    padding: 35px 20px;
-  }
-
-  .countdown-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .countdown-details {
-    grid-template-columns: 1fr;
-  }
-}
-
-@media (max-width: 420px) {
-  .countdown-grid {
-    grid-template-columns: 1fr;
-  }
-}
- */
 .section {
 	width: min(1100px, 92%);
 	margin: 0 auto;
